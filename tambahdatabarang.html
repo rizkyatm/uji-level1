@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tambah data barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bdytambah">
+    <div class="bar">
+        <div class="profil">
+            <div class="logo"></div>
+            <h2>RIZATM</h2>
+        </div>
+        <div class="dmaster">
+            <a href="tampilandatasiswa.php">Data siswa</a>
+            <a href="tampildatabarang.php">Data barang</a>
+        </div>
+    </div>
+        
+    <form action="simpandatabarang.php" method="post">
+        <div class="imputdata">
+        <h3>TAMBAH DATA barang</h3>
+        <p><label>kode barang : <input required="required" type="number" name="kode_barang"></input></label></p>
+        <p><label for="">nama barang : <input required="required" type="text" name="nama_barang"></input></label></p>
+        <p><label for="">jumlah barang : <input required="required" type="number" name="jumlah_barang"></input></label></p>
+        <p><label for="">satuan : <input required="required" type="text" name="satuan"></input></label></p>
+        <p><label for="">JENIS barang : <input required="required" type="text" name="jenis_barang"></input></label></p>
+        <input type="submit" name="simpanbarang" value="simpan">
+    </div>
+</div>
+</body>
+</html>
