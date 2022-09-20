@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tambah data barang</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="barang.css">
 </head>
 <body>
     <div class="bdytambah">
     <div class="bar">
         <div class="profil">
-            <div class="logo"></div>
             <h2>RIZATM</h2>
         </div>
         <div class="dmaster">
@@ -19,16 +18,36 @@
             <a href="tampildatabarang.php">Data barang</a>
         </div>
     </div>
-        
-    <form action="simpandatabarang.php" method="post">
-        <div class="imputdata">
-        <h3>TAMBAH DATA barang</h3>
-        <p><label>kode barang : <input required="required" type="number" name="kode_barang"></input></label></p>
-        <p><label for="">nama barang : <input required="required" type="text" name="nama_barang"></input></label></p>
-        <p><label for="">jumlah barang : <input required="required" type="number" name="jumlah_barang"></input></label></p>
-        <p><label for="">satuan : <input required="required" type="text" name="satuan"></input></label></p>
-        <p><label for="">JENIS barang : <input required="required" type="text" name="jenis_barang"></input></label></p>
-        <input type="submit" name="simpanbarang" value="simpan">
+
+    <div class="container">
+        <div class="judul"> <p> TAMBAH DATA BARANG</p></div>
+            <form action="simpandatabarang.php" method="post">
+                <div class="user-detail">
+                    <div class="input-box">
+                        <span class="detail">KODE BARANG</span>
+                        <input required="required" type="number" name="kode_barang" placeholder="Ketik Kode Barang"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">NAMA BARANG</span>
+                        <input required="required" type="text" name="nama_barang" placeholder="Ketik Nama Barang"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">JUMLAH BARANG</span>
+                        <input required="required" type="number" name="jumlah_barang" placeholder="Ketik Jumlah Barang"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">SATUAN</span>
+                        <input required="required" type="text" name="satuan" placeholder="Ketik Satuan"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">JENIS BARANG</span>
+                        <input required="required" type="text" name="jenis_barang" placeholder="Ketik Jenis Barang"></input>
+                    </div>
+                    <DIv class="btn-simpan">
+                        <input type="submit" name="simpanbarang" value="simpan">
+                    </DIv>
+                </div>
+            </form>
     </div>
 </div>
 </body>

@@ -1,7 +1,7 @@
 <?php
 include 'koneksi.php';
 
-if(isset($_POST['simpanbarang'])){
+if(isset($_POST['simpan'])){
     $nisn = $_POST['nisn'];
     $nama = $_POST['nama'];
     $kelas = $_POST['kelas'];

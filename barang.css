@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo{
+    background-color: rgb(141, 135, 135);
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin-left:-15px;
+}
+
+.profil{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    background-color: #BFBFBF;
+    width: 300px;
+    height: 74px;
+}
+
+.profil h2{
+    font-size: 32px;
+    margin-left: -15px;
+}
+
+.bar{
+    background-color: #8AA6A3;
+    width:300px;
+    height: 100vh;
+}
+
+.dmaster{
+    margin: 50px auto;
+    width: 100px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.dmaster a{
+    color: white;
+    text-decoration: none ;
+}
+
+.bdytambah{
+    display: flex;
+    width: 100%;
+}
+.container{
+    margin: auto auto;
+    width: 400px;
+    height: 500px;
+    background-color: #BFBFBF;
+    padding: 25px 30px;
+    border-radius: 44px;
+}
+.container-u{
+    margin: auto auto;
+    width: 400px;
+    height: 450px;
+    background-color: #BFBFBF;
+    padding: 25px 30px;
+    border-radius: 44px;
+}
+.judul{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.input-box{
+    margin-top: 30px;
+}
+ .input-box input{
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+ }
+
+ .btn-simpan input{
+    background-color: #8AA6A3;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 1000px;
+    top: 590px;
+
+ }
+
+ .btn-simpan-u input{
+    background-color: #8AA6A3;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 1000px;
+    top: 555px;
+ }
+
+ .tbbarang{
+    width: 700px;  
+    margin: 150px auto;
+}
+
+ table{
+    border-collapse: collapse;
+    font-size: 20px;  
+    border: 1px solid #cccccc; 
+}
+
+td{
+    padding: 3px;
+    height: 25px;
+}
+
+th{
+    background-color: #8AA6A3;
+    color: white;
+    height: 30px;
+}
+
+.btn-edit{
+    border: 1px solid greenyellow;
+    background:greenyellow url(./images/edit.png) no-repeat 4px 5px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.btn-hapus{
+    border: 1px solid #bd5d59;
+    background:#bd5d59 url(./images/hapus.png) no-repeat 4px 5px;
+    margin-top: 10px;
+    padding-left: 20px;
+}

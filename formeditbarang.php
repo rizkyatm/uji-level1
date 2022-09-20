@@ -17,28 +17,49 @@ if(mysqli_num_rows($query) < 1){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Data barang</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="barang.css">
 </head>
 <body>
+<div class="bdytambah">
 <div class="bar">
         <div class="profil">
-            <div class="logo"></div>
             <h2>RIZATM</h2>
         </div>
         <div class="dmaster">
-            <a href="tampildatabarang.php">Data siswa</a>
-            <a href="#">Data barang</a>
+            <a href="tampilandatasiswa.php">Data siswa</a>
+            <a href="tampildatabarang.php">Data barang</a>
         </div>
-    <form action="editdatabarang.php" method="POST">
-        <div class="imputdata">
-        <h3>Edit Data barang</h3>
-        <p><label> <input value="<?php echo $pel['kode_barang']?>" required="required"  type="hidden" name="kode_barang"></label></p>
-        <p><label>nama barang : <input value="<?php echo $pel['nama_barang']?>" required="required" type="text" name="nama_barang"></label></p>
-        <p><label>jumlah barang : <input value="<?php echo $pel['jumlah_barang']?>" required="required" type="number" name="jumlah_barang"></textarea></label></p>
-        <p><label>satuan : <input value="<?php echo $pel['satuan']?>" required="required" type="text" name="satuan"></label></p>
-        <p><label>jenis barang : <input value="<?php echo $pel['jenis_barang']?>" required="required" type="text" name="jenis_barang"></label></p>
-        <input type="submit" name="updatebarang" value="update">
-        </div>
-    </form>
+    </div>
+      <div class="container-u">
+        <div class="judul"> <p>UPDATE DATA BARANG</p></div>
+            <form action="editdatabarang.php" method="post">
+                <div class="user-detail">
+                    <div class="input-box">
+                        <span class="detail"></span>
+                        <input value="<?php echo $pel['kode_barang']?>" required="required" type="hidden" name="kode_barang"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">NAMA BARANG</span>
+                        <input value="<?php echo $pel['nama_barang']?>" required="required" type="text" name="nama_barang"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">JUMLAH BARANG</span>
+                        <input value="<?php echo $pel['jumlah_barang']?>" required="required" type="number" name="jumlah_barang"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">SATUAN</span>
+                        <input value="<?php echo $pel['satuan']?>" required="required" type="text" name="satuan"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">JENIS BARANG</span>
+                        <input  value="<?php echo $pel['jenis_barang']?>" required="required" type="text" name="jenis_barang"></input>
+                    </div>
+                    <DIv class="btn-simpan-u">
+                        <input type="submit" name="updatebarang" value="update">
+                    </DIv>
+                </div>
+            </form>
+    </div>
+    </div>
 </body>
 </html>

@@ -5,30 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tambah data siswa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="siswa.css">
 </head>
 <body>
     <div class="bdytambah">
     <div class="bar">
         <div class="profil">
-            <div class="logo"></div>
             <h2>RIZATM</h2>
         </div>
         <div class="dmaster">
             <a href="tampilandatasiswa.php">Data siswa</a>
             <a href="tampildatabarang.php">Data barang</a>
         </div>
-    </div>
-        
-    <form action="simpandatasiswa.php" method="post">
-        <div class="imputdata">
-        <h3>TAMBAH DATA SISWA</h3>
-        <p><label>NISN : <input required="required" type="number" name="nisn"></input></label></p>
-        <p><label for="">NAMA : <input required="required" type="text" name="nama"></input></label></p>
-        <p><label for="">KELAS : <input required="required" type="number" name="kelas"></input></label></p>
-        <p><label for="">AGAMA : <input required="required" type="text" name="agama"></input></label></p>
-        <p><label for="">JENIS KELAMIN : <input required="required" type="text" name="jenis_kelamin"></input></label></p>
-        <input type="submit" name="simpan" value="simpan">
+    </div>   
+    <div class="container">
+        <div class="judul"> <p> TAMBAH DATA SISWA</p></div>
+            <form action="simpandatasiswa.php" method="post">
+                <div class="user-detail">
+                    <div class="input-box">
+                        <span class="detail">NISN</span>
+                        <input required="required" type="number" name="nisn" placeholder="Ketik Nisn"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">NAMA</span>
+                        <input required="required" type="text" name="nama" placeholder="Ketik Nama"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">KELAS</span>
+                        <input required="required" type="number" name="kelas" placeholder="Ketik kelas"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">AGAMA</span>
+                        <input required="required" type="text" name="agama" placeholder="Ketik Agama"></input>
+                    </div>
+                    <div class="input-box">
+                        <span class="detail">JENIS KELAMIN</span>
+                        <input required="required" type="text" name="jenis_kelamin" placeholder="Ketik Jenis kelamin"></input>
+                    </div>
+                    <DIv class="btn-simpan">
+                        <input type="submit" name="simpan" value="simpan">
+                    </DIv>
+                </div>
+            </form>
     </div>
 </div>
 </body>
