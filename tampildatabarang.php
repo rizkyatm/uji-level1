@@ -14,27 +14,29 @@ include 'koneksi.php';
 </head>
 <body>
 <div class="bdytambah">
-    <div class="bar">
+<div class="bar">
         <div class="profil">
-            <h2>RIZATM</h2>
+            <div class="logo"><img src="./images/LSTB-removebg-preview.png" alt="logo"></div>
+            <h2>SARPRAS</h2>
         </div>
         <div class="dmaster">
-            <a href="tampilandatasiswa.php">Data siswa</a>
-            <a href="#">Data barang</a>
+            <a href="tampilandatasiswa.php  " class="d-siswa"><i class="fas fa-user-friends" style="font-size:20px;"></i>  Data siswa</a>
+            <a href="#" class="d-barang"><i class="fas fa-box" style="font-size:21px;"></i>  Data barang</a>
         </div>
-    </div class="">       
+    </div> 
+
     <div class="tbbarang">
         <h3>Data Barang</h3>
-        <h4><a href="tambahdatabarang.html">[+]Tambah Baru</a></h4>
+        <h4><a href="tambahdatabarang.html">Tambah Baru</a></h4>
         <div>
         <table border="">
         <tr>
-            <th width="130">Kode Barang</th>
-            <th width="130">Nama Barang</th>
-            <th width="150">Jumlah Barang</th>
-            <th width="75">Satuan</th>
-            <th width="125">jenis Barang</th>
-            <th colspan="2">Action</th>
+            <th>Kode Barang</th>
+            <th>Nama Barang</th>
+            <th>Jumlah</th>
+            <th>Satuan</th>
+            <th>jenis Barang</th>
+            <th colspan="2" style="padding-left:25px;">Action</th>
         </tr>
         <?php
             $sql = "SELECT * FROM data_barang";
@@ -55,6 +57,6 @@ include 'koneksi.php';
     </table>
     </div>
     </div>
-    </div>
+    </div>   
 </body>
 </html>

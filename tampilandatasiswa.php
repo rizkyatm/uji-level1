@@ -10,29 +10,34 @@ include 'koneksi.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="siswa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
 <div class="bdytambah">
     <div class="bar">
         <div class="profil">
-            <h2>RIZATM</h2>
+            <div class="logo"><img src="./images/LSTB-removebg-preview.png" alt="logo"></div>
+            <h2>SARPRAS</h2>
         </div>
         <div class="dmaster">
-            <a href="#">Data siswa</a>
-            <a href="tampildatabarang.php">Data barang</a>
+            <a href="#" class="d-siswa"><i class="fas fa-user-friends" style="font-size:20px;"></i>  Data siswa</a>
+            <a href="tampildatabarang.php" class="d-barang"><i class="fas fa-box" style="font-size:21px;"></i>  Data barang</a>
         </div>
     </div>
+
     <div class="tbsiswa">
-        <h3>Data Siswa</h3>
-    <h4><a href="tambahdatasiswa.html">[+]Tambah Baru</a></h4>
+    <h3>Data Siswa</h3>
+    <h4><a href="tambahdatasiswa.html">Tambah Baru</a></h4>
+    <div class="a-table">
     <table border="1">
         <tr>
-            <th width="90">NISN</th>
-            <th width="130">Nama Siswa</th>
-            <th width="90">Kelas</th>
-            <th width="90">Agama</th>
-            <th width="130">jenis Kelamin</th>
-            <th colspan="2">Action</th>
+            <th>NISN</th>
+            <th>Nama Siswa</th>
+            <th>Kelas</th>
+            <th>Agama</th>
+            <th>jenis Kelamin</th>
+            <th colspan="2" style="padding-left:32px;">Action</th>
         </tr>
         <?php
             $sql = "SELECT * FROM data_siswa";
@@ -51,6 +56,7 @@ include 'koneksi.php';
             }
         ?>
     </table>
+    </div>
     </div>
     </div>
 </body>

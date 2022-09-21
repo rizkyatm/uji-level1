@@ -18,16 +18,18 @@ if(mysqli_num_rows($query) < 1){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Data siswa</title>
     <link rel="stylesheet" href="siswa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div class="bdytambah">
 <div class="bar">
         <div class="profil">
-            <h2>RIZATM</h2>
+            <div class="logo"><img src="./images/LSTB-removebg-preview.png" alt="logo"></div>
+            <h2>SARPRAS</h2>
         </div>
         <div class="dmaster">
-            <a href="tampilandatasiswa.php">Data siswa</a>
-            <a href="tampildatabarang.php">Data barang</a>
+            <a href="tampilandatasiswa.php" class="d-siswa"><i class="fas fa-user-friends" style="font-size:20px;"></i>  Data siswa</a>
+            <a href="tampildatabarang.php" class="d-barang"><i class="fas fa-box" style="font-size:21px;"></i>  Data barang</a>
         </div>
     </div>
       <div class="container-u">
