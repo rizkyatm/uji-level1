@@ -1,16 +1,16 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
 
-.logo img{
+.logo img {
     width: 70px;
-    margin-left: -40px;
-    margin-right: 5px;
+    margin-left: -70px;
+    margin-right: 35px;
 }
 
-.profil{
+.profil {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,42 +19,46 @@
     height: 74px;
 }
 
-.profil h2{
-    font-size: 20px; 
+.profil h2 {
+    font-size: 20px;
 }
 
-.bar{
+.bar {
     background-color: #99B4BF;
-    width:300px;
+    width: 300px;
     height: 100vh;
+    position: sticky;
+    top: 0px;
 }
 
-.dmaster{
+.dmaster {
     margin: 1px auto;
     width: 100%;
     line-height: 50px;
     font-size: 15px;
+    font-weight: bold;
 }
 
-.dmaster a{
+.dmaster a {
     display: block;
-    text-decoration: none ;
+    text-decoration: none;
     padding: 5px;
     color: black;
 }
 
-.dmaster :hover{
+.dmaster :hover {
     background-color: #8a9ca3;
     box-shadow: 0 0 5px;
     margin-top: -2px;
 }
 
-.bdytambah{
+.bdytambah {
     display: flex;
     width: 100%;
-    background: linear-gradient(135deg,#2D4B73, #99B4BF);
+    background: linear-gradient(135deg, #2D4B73, #99B4BF);
 }
-.container{
+
+.container {
     margin: auto;
     width: 900px;
     height: 500px;
@@ -63,7 +67,8 @@
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
-.container-u{
+
+.container-u {
     margin: auto auto;
     width: 900px;
     height: 450px;
@@ -72,24 +77,26 @@
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
-.judul{
-    font-size: 25px;
+
+.judul {
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     padding: 5px;
 }
 
-.input-box{
+.input-box {
     margin-top: 30px;
 }
- .input-box input{
+
+.input-box input {
     width: 900px;
     height: 30px;
     font-size: 18px;
- }
+}
 
- .btn-simpan input{
-    background: linear-gradient(135deg,#2D4B73, #99B4BF);
+.btn-simpan input {
+    background: linear-gradient(135deg, #2D4B73, #99B4BF);
     padding: 10px 30px;
     border: none;
     border-radius: 10px;
@@ -97,57 +104,57 @@
     left: 1270px;
     top: 590px;
 
- }
+}
 
- .btn-simpan-u input{
-    background: linear-gradient(135deg,#2D4B73, #99B4BF);
+.btn-simpan-u input {
+    background: linear-gradient(135deg, #2D4B73, #99B4BF);
     padding: 10px 30px;
     border: none;
     border-radius: 10px;
     position: absolute;
     left: 1270px;
     top: 555px;
- }
-
- .tbbarang{
-    margin: 200px auto;
 }
 
-.tbbarang h4 a{
+.tbbarang {
+    margin: 105px auto;
+}
+
+.tbbarang h4 a {
     background-color: #3CCF4E;
     padding: 10px;
     border-radius: 5px;
     color: white;
     text-decoration: none;
     position: relative;
-    top:-30px;
+    top: -30px;
     border: 3px solid transparent;
 }
 
-.tbbarang h3{
+.tbbarang h3 {
     font-weight: bold;
-    font-size: 35px;
-    position: absolute; 
-    top: 80px;
-    color:white;
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    color: white;
 }
 
-table{
+table {
     border-collapse: collapse;
-    font-size: 20px;  
+    font-size: 18px;
     border: 1px solid #cccccc;
-    margin: 0px; 
+    margin: 0px;
     width: 1000px;
     background-color: white;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
-td{
+td {
     border: none;
-    padding: 10px;
+    padding: 10px 10px 10px 11px;
 }
 
-th{
+th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -155,10 +162,10 @@ th{
     background-color: #253C59;
     color: white;
     border: none;
-    
+
 }
 
-table tr:nth-child(even){
+table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
@@ -166,17 +173,18 @@ table tr:hover {
     background-color: #ddd;
 }
 
-.btn-edit{
+.btn-edit {
     border: 1px solid hsl(60, 72%, 45%);
-    background:hsl(60, 72%, 45%) url(./images/edit.png) no-repeat 7px 8px;
+    background: hsl(60, 72%, 45%) url(./images/edit.png) no-repeat 7px 8px;
     margin-top: 10px;
     padding-left: 24px;
     padding-bottom: 5px;
     border: 2px solid transparent;
 }
-.btn-hapus{
+
+.btn-hapus {
     border: 1px solid #bd5d59;
-    background:#bd5d59 url(./images/hapus.png) no-repeat 7px 8px;
+    background: #bd5d59 url(./images/hapus.png) no-repeat 7px 8px;
     margin-top: 10px;
     padding-left: 24px;
     padding-bottom: 5px;
